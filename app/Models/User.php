@@ -66,4 +66,7 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Role::class)->withTrashed();
     }
+    public function products(){
+        return $this->belongsToMany(Product::class);
+    }
 }

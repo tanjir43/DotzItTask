@@ -27,7 +27,10 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified','B
         return view('dashboard');
     })->name('dashboard');
 
-    Route::get('/product','company\ProductController@index')->name('product');
-    Route::post('/product-save','company\ProductController@save')->name('product.save');
+    Route::get('/product','ProductController@index')->name('product');
+    Route::post('/product-save','ProductController@save')->name('product.save');
     
+    Route::get('/my-product','MyProductController@index')->name('my.product');
+    Route::post('/my-product-save','MyProductController@save')->name('my.product.save');
+    //Route::get('autocomplete', 'MyProductController@autocomplete')->name('autocomplete');
 });

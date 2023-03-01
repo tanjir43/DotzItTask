@@ -11,19 +11,19 @@ return new class extends Migration
         [
             'name'          => 'Administrator',
             'name_l'        => 'প্রশাসক',
-            'permissions'   => '[1,2,3,4,6,100]',
+            'permissions'   => '[1,2,3,4,6,100,,101]',
             'created_by'    => '0'
         ],
         [
             'name'          =>  'Admin',
             'name_l'        =>  'অ্যাডমিন',
-            'permissions'   =>  '[1,2,3,4,6,100]',
+            'permissions'   =>  '[1,2,3,4,6,100,101]',
             'created_by'    =>  '0'
         ],
         [
             'name'          =>  'Seller',
             'name_l'        =>  'বিক্রেতা',
-            'permissions'   =>  '[1,2,3,4,6,100]',
+            'permissions'   =>  '[1,2,3,4,6,100,101]',
             'created_by'    =>  '0'
         ],
     ];

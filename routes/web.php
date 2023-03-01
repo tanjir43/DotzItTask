@@ -18,8 +18,12 @@ Route::get('/',function() {
     if(Auth::user()) {
         return redirect(url('dashboard'));
     }
-    return redirect(url('login'));
+    return redirect(url('home'));
 });
+
+Route::get('home', 'WelcomeController@index')->name('index');
+Route::get('detail/{id}', 'WelcomeController@detail')->name('detail');
+
 Route::get('change-lang/{lang}', 'ChangeLangController@index')->name('chang.lang');
 
 Route::post('/login','AuthenticatedSessionController@store');

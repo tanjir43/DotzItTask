@@ -70,6 +70,18 @@ return new class extends Migration
             'note'      =>  '',
             'note_l'    =>  '',
         ],
+        [
+            'id'        => 101,
+            'parent'    => null,
+            'name'      => 'My Product',
+            'name_l'    => 'আমার পণ্য ',
+            'web'       => 'my.product',
+            'app'       => '',
+            'web_icon'  =>  'uil uil-home-alt',
+            'app_icon'  =>  '',
+            'note'      =>  '',
+            'note_l'    =>  '',
+        ],
 
     ];
 
