@@ -12,7 +12,15 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
+        if(env('PACKAGE','A1') != 'A1') {
+            $schedule->command('attendance-close:cron')
+            ->dailyAt('23:30')
+            ->runInBackground();
+
+            $schedule->command('prepare-attendance:cron')
+                ->everyMinute()
+                ->runInBackground();
+        }
     }
 
     /**

@@ -15,7 +15,9 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'dotzItTask'),
+    'permissible_branch' => env('PERMISSIBLE_BRANCH',1),
+    'package' => env('PACKAGE','A1'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +58,7 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
-    'asset_url' => env('ASSET_URL'),
+    'asset_url' => env('ASSET_URL', '/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -69,7 +71,8 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    #'timezone' => 'UTC',
+    'timezone'  => 'Asia/Dhaka',
 
     /*
     |--------------------------------------------------------------------------
@@ -194,6 +197,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\FortifyServiceProvider::class,
+        App\Providers\JetstreamServiceProvider::class,
 
     ],
 
