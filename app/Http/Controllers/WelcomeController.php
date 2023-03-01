@@ -15,7 +15,7 @@ class WelcomeController extends Controller
     public function detail($id) {
         $productUser = ProductUser::where('product_id',$id);
 
-        dd($productUser);
+        #dd($productUser);
         return view('detail');
     }
 }

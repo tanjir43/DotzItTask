@@ -486,7 +486,7 @@ irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p
 <div class="row">
     <p><strong>this model is have some :similar seller:</strong> </p>
     
-    <p>{{}}</p>
+   {{--  <p>{{}}</p> --}}
 </div>
 <div class="row">
 <div class="col-lg-4 col-12">
